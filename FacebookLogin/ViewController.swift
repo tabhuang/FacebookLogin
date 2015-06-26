@@ -36,7 +36,7 @@ class ViewController: UIViewController , FBSDKLoginButtonDelegate
         content.contentURL = NSURL(string: "https://github.com/tabhuang/FacebookLogin")
         content.contentTitle = "Swift"
         content.contentDescription = "Facebook Login & Share"
-        content.imageURL = NSURL(string: "https://github.com/tabhuang/FacebookLogin/raw/master/3.png")
+        content.imageURL = NSURL(string: "https://raw.githubusercontent.com/tabhuang/FacebookLogin/master/3.png")
         shareButton.shareContent = content
         shareButton.enabled = false
         
