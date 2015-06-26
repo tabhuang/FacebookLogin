@@ -13,8 +13,9 @@
 		E58E01A01B3D364900AE7023 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E58E019F1B3D364900AE7023 /* Images.xcassets */; };
 		E58E01A31B3D364900AE7023 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58E01A11B3D364900AE7023 /* LaunchScreen.xib */; };
 		E58E01AF1B3D364900AE7023 /* FacebookLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58E01AE1B3D364900AE7023 /* FacebookLoginTests.swift */; };
-		E58E01C11B3D46C300AE7023 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E01C01B3D46C300AE7023 /* FBSDKCoreKit.framework */; };
-		E58E01C31B3D46E600AE7023 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E58E01C21B3D46E600AE7023 /* FBSDKLoginKit.framework */; };
+		E5FE39DD1B3DB6BF0065AB9B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FE39DC1B3DB6BF0065AB9B /* FBSDKCoreKit.framework */; };
+		E5FE39DF1B3DB6D30065AB9B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FE39DE1B3DB6D30065AB9B /* FBSDKLoginKit.framework */; };
+		E5FE39E11B3DB6E00065AB9B /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FE39E01B3DB6E00065AB9B /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +39,9 @@
 		E58E01A81B3D364900AE7023 /* FacebookLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58E01AD1B3D364900AE7023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E58E01AE1B3D364900AE7023 /* FacebookLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginTests.swift; sourceTree = "<group>"; };
-		E58E01C01B3D46C300AE7023 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		E58E01C21B3D46E600AE7023 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E5FE39DC1B3DB6BF0065AB9B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E5FE39DE1B3DB6D30065AB9B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E5FE39E01B3DB6E00065AB9B /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58E01C31B3D46E600AE7023 /* FBSDKLoginKit.framework in Frameworks */,
-				E58E01C11B3D46C300AE7023 /* FBSDKCoreKit.framework in Frameworks */,
+				E5FE39DD1B3DB6BF0065AB9B /* FBSDKCoreKit.framework in Frameworks */,
+				E5FE39E11B3DB6E00065AB9B /* FBSDKShareKit.framework in Frameworks */,
+				E5FE39DF1B3DB6D30065AB9B /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,8 +68,9 @@
 		E58E018A1B3D364900AE7023 = {
 			isa = PBXGroup;
 			children = (
-				E58E01C21B3D46E600AE7023 /* FBSDKLoginKit.framework */,
-				E58E01C01B3D46C300AE7023 /* FBSDKCoreKit.framework */,
+				E5FE39DE1B3DB6D30065AB9B /* FBSDKLoginKit.framework */,
+				E5FE39E01B3DB6E00065AB9B /* FBSDKShareKit.framework */,
+				E5FE39DC1B3DB6BF0065AB9B /* FBSDKCoreKit.framework */,
 				E58E01951B3D364900AE7023 /* FacebookLogin */,
 				E58E01AB1B3D364900AE7023 /* FacebookLoginTests */,
 				E58E01941B3D364900AE7023 /* Products */,

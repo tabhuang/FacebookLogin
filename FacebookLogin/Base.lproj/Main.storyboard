@@ -12,27 +12,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="jaM-UA-1ca" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="69" y="356" width="198" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" id="mn5-92-cNh" customClass="FBSDKProfilePictureView">
-                                <rect key="frame" x="53" y="31" width="214" height="172"/>
+                                <rect key="frame" x="53" y="159" width="214" height="172"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xGk-32-Cdg">
+                                <rect key="frame" x="16" y="101" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="jaM-UA-1ca" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="69" y="459" width="198" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="nus-Fu-GAh" eventType="valueChanged" id="0UM-Ai-c5A"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Er9-VP-CZW">
+                                <rect key="frame" x="16" y="72" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98039215686274506" green="0.0" blue="0.0098544312807272421" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TMU-dZ-DlK">
+                                <rect key="frame" x="16" y="130" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9OK-AQ-570" customClass="FBSDKShareButton">
+                                <rect key="frame" x="16" y="518" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wff-d7-yzD">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="Euw-Ke-VTs"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="loginButton" destination="jaM-UA-1ca" id="Kfi-Rw-xBZ"/>
+                        <outlet property="loginButton" destination="jaM-UA-1ca" id="ZhB-Bj-4Kw"/>
+                        <outlet property="loginInfo" destination="Er9-VP-CZW" id="r72-hF-fto"/>
+                        <outlet property="shareButton" destination="9OK-AQ-570" id="gaK-Ee-kpu"/>
+                        <outlet property="userEmail" destination="TMU-dZ-DlK" id="AV2-j2-ICY"/>
                         <outlet property="userImage" destination="mn5-92-cNh" id="eMQ-Fa-qdl"/>
+                        <outlet property="userName" destination="xGk-32-Cdg" id="byp-HZ-a3I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odj-rm-Nhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="422"/>
+            <point key="canvasLocation" x="1329" y="422"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
