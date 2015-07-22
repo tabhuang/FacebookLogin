@@ -1,4 +1,4 @@
-#iOS-Swift程式練習-Facebook登入
+#Swift程式練習-Facebook登入
 #程式介紹
 1. 程式初始畫面<br/>
 <img src="https://github.com/tabhuang/FacebookLogin/blob/master/1.png" alt="GitHub" title="GitHub,Social Coding" width="30%" height="30%" />
